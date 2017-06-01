@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffe5e5"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/main1_btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="맛집추가" />
+
+        <Button
+            android:id="@+id/main1_btn_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="이름순" />
+
+        <Button
+            android:id="@+id/main1_btn_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="종류별" />
+
+        <Button
+            android:id="@+id/main1_btn_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="선택" />
+
+        <Button
+            android:id="@+id/main1_btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="삭제"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/main1_edit_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff3344"
+        android:drawableLeft="@android:drawable/ic_input_delete"
+        android:drawablePadding="5dp"
+        android:padding="5dp"
+        android:textFilterEnabled="true" />
+
+
+    <ListView
+        android:id="@+id/main1_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

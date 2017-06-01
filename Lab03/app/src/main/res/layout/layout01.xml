@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="학점을 계산해 보세요"
+        android:textColor="#8a85b6"
+        android:textStyle="bold"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fabdec"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:stretchColumns="0, 1">
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="국어" />
+            <EditText android:id="@+id/edit_grade1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="점수 입력"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="수학" />
+            <EditText android:id="@+id/edit_grade2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="점수 입력"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="영어" />
+            <EditText android:id="@+id/edit_grade3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="점수 입력"
+                />
+        </TableRow>
+        <TableRow>
+            <Button android:id="@+id/btn_calcGrades"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:text="학점 계산"/>
+        </TableRow>
+        <TableRow>
+            <Button android:id="@+id/btn_init"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:text="초기화"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="총점"/>
+            <TextView android:id="@+id/text_total"
+                android:text="0점"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="평균"/>
+            <TextView android:id="@+id/text_average"
+                android:text="0점"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="총점"/>
+            <ImageView android:id="@+id/img_grade"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:visibility="gone"
+                />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

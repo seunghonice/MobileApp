@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_bluring"
+        android:title="Bluring"
+        android:checkable="true"
+        />
+    <item android:id="@+id/menu_coloring"
+        android:title="Coloring"
+        android:checkable="true"
+        />
+    <item android:id="@+id/menu_pen_width_big"
+        android:title="Pen Width Big"
+        android:checkable="true"
+        />
+    <item android:id="@+id/menu_pen_color_red"
+        android:title="Pen Color RED"
+        />
+    <item android:id="@+id/menu_pen_color_blue"
+        android:title="Pen Color BLUE"
+        />
+    <item android:id="@+id/menu_pen_color_black"
+        android:title="Pen Color BLACK"
+        />
+</menu>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="25dp"
+    android:padding="20dp"
+    android:background="#FFFFFF">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="평이나 면적을 입력하세요"
+        android:layout_marginBottom="25dp"/>
+    <EditText android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/btn_star"
+
+            />
+        <TextView android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="계산 결과가 없습니다."
+            android:textSize="42px"
+            />
+    </LinearLayout>
+    <Button android:id="@+id/toMeter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="평을 제곱미터로 변환"
+        android:background="#7ea8e1"
+        android:textStyle="bold"
+        android:textSize="40px"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="25dp"/>
+    <Button android:id="@+id/toPyeong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="제곱미터를 평으로 변환"
+        android:background="#66ea96"
+        android:textStyle="bold"
+        android:textSize="40px"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

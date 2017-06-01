@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mobile.lab05.MainActivity"
+    android:orientation="vertical">
+
+    <Button android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="일반 토스트" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="X 좌표: "
+            android:gravity="right"/>
+        <EditText android:id="@+id/editX"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="4"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Y 좌표: "
+            android:gravity="right"/>
+        <EditText android:id="@+id/editY"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="4"/>
+    </LinearLayout>
+    <Button android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="중간에 토스트 뜨게하기" />
+    <Button android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="사용자 화면 지정" />
+    <Button android:id="@+id/btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SNACKBAR로 메시지" />
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="#ffadad">
+        <TextView  android:text="메뉴 이미지 변경 간격(초):"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText android:id="@+id/edit_seconds"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:padding="5dp"/>
+        <Button android:id="@+id/btn_reset"
+            android:text="처음으로"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:text="오늘 뭐 먹을까?"
+            android:textColor="#f14e4e"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView android:id="@+id/image"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/play"
+            android:layout_gravity="center_horizontal"/>
+        <TextView android:id="@+id/text_count"
+            android:visibility="gone"
+            android:text=""
+            android:textColor="#1d32f2"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

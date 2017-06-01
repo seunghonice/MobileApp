@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="즐겨찾기 추가" android:id="@+id/addurl"/>
+    <item android:title="즐겨찾기 목록" android:id="@+id/listurl"/>
+</menu>
